@@ -67,6 +67,7 @@ body {
     .hero-section {
         flex-direction: column-reverse;
         height: max-content;
+        min-height: min-content;
         margin-top: 50px;
         margin-bottom: 50px;
         /* gap: 0px; */
@@ -98,4 +99,5 @@ body {
     .nav-bar-links {
         display: none;
     }
+
 }
