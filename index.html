@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <!-- --------------------------------------- navigation bar --------------------------------------- -->
+    <header id="home">
+        <nav class="nav-bar">
+            <img class="nav-bar-logo" src="Akash-logo-without-background.png" alt="logo">
+            <ul class="nav-links-container">
+                <li><a href="#home"             id="h" class="nav-bar-links">Home</a></li>
+                <li><a href="#skills"           id="h" class="nav-bar-links">Skills</a></li>
+                <li><a href="#about-container"  id="h" class="nav-bar-links">About</a></li>
+                <li><a href="#contact-container"id="h" class="nav-bar-links">contact Me</a></li>
+            </ul>
+            <ul class="nav-links-container">
+                <li class="nav-buttons-container"><a href="" class="nav-button btn ">Let's Talk</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container" >
+        <!------------------------------------------ hero section --------------------------------------- -->
+        <div class="hero-section">
+            <div class="sub-container-hero">
+                <h3 class="hello-text">Hello, It's Me</h3>
+                <h2 class="my-name">Akash kumar</h2>
+                <h4 class="job-role">I'm a <span class="span-text">Full Stack Developer</span></h4>
+                <p class="description">Full-stack developer who turns ideas into robust web apps. DSA enthusiast with a knack for writing efficient, elegant solutions.</p>
+                <div class="social-icon-container">
+                    <a href="#"><img class="social-icons" src="linkedin.png" alt="linkedin"></a>
+                    <a href=""><img class="social-icons" src="Fb.png" alt=""></a>
+                    <a href=""><img class="social-icons" id="git-hub-icon" src="icons8-github.svg" alt=""></a>
+                    <a href=""><img class="social-icons" src="insta.png" alt=""></a>
+                </div>
+                <a class="btn" href="#">Get Started</a>
+            </div>
+            <div class="sub-container-hero ">
+                <img  class="hero-section-image" src="profile.jpg" alt="my photo">
+            </div>
+        </div>
+        <!------------------------------------------ About section --------------------------------------- -->
+        <div id="about-container">
+            <div class="about-me-flexbox">
+
+                <div class="sub-container-hero about-image-container">
+                    <img class="about-section-image" src="Akash2.jpg" alt="my photo">
+                </div>
+                <div class="about-me-description">
+                    <h2>About <span class="span-text" >Me</span></h2>
+                    <h3>Software Developer And Engineer</h3>
+                    <p>Hi, I’m Akash Kumar, a passionate BCA 2nd year student and aspiring Full Stack Web Developer. I have a strong foundation in HTML, CSS, and JavaScript, and I’m currently expanding my skills by learning Node.js and databases to build dynamic and scalable applications. I’ve already built my first project and am working on new ones to strengthen my development journey. Alongside full stack development, I’m preparing myself for an SDE role, with a focus on problem-solving and writing clean, efficient code. I’m excited to keep growing, building impactful projects, and contributing to real-world solutions.</p>
+                </div>
+
+            </div>
+        </div>
+        <!------------------------------------------ My skills --------------------------------------- -->
+        <h2 class="my-skills-header">My <span class="span-text">skills</span></h2>
+        <div class="my-skills-container" id="skills">
+            <div class="skill-box">
+                <img class="skill-logo" src="WEBDEV.png" alt="Skill logo">
+                <h2 class="skill-name">Web Dev</h2>
+                <p class="skill-description">I have experience in web development, creating responsive and user-friendly applications using modern technologies. I focus on clean code, scalability, and delivering efficient solutions.</p>
+                <a class="skill-button btn" href="">Know More</a>
+            </div>
+            <div class="skill-box">
+                <img class="skill-logo" src="data-structure.png" alt="Skill logo">
+                <h2 class="skill-name">DSA</h2>
+                <p class="skill-description">My knowledge of DSA strengthens my problem-solving ability and helps me write optimized, efficient code. I apply these concepts to handle challenges logically and improve performance.</p>
+                <a class="skill-button btn" href="">Know More</a>
+            </div>
+            <div class="skill-box">
+                <img class="skill-logo" src="conversation.png" alt="Skill logo">
+                <h2 class="skill-name">Communication</h2>
+                <p class="skill-description">I have strong communication skills that allow me to explain ideas clearly, collaborate with teams effectively, and work smoothly with both technical and non-technical people.</p>
+                <a class="skill-button btn" href="">Know More</a>
+            </div>
+            <div class="skill-box">
+                <img class="skill-logo" src="cpp.png" alt="Skill logo">
+                <h2 class="skill-name">C++</h2>
+                <p class="skill-description">I have experience in C++ with a focus on problem-solving, data structures, algorithms, and OOP concepts, along with practical use of STL for writing efficient solutions.</p>
+                <a class="skill-button btn" href="">Know More</a>
+            </div>
+           
+        </div>
+
+        <!------------------------------------------ contact me --------------------------------------- -->
+        <div id="contact-container">
+            <h2 class="contact-me-header">contact <span class="span-text">Me!</span></h2>
+            <form class="contact-form" action="">
+                <div class="input">
+                    <input type="text" placeholder="Enter First name">
+                    <input type="text" placeholder="Enter Last name">
+                    <input type="email" placeholder="Enter Email Address">
+                    <input type="tel" placeholder="Enter contact Number">
+                </div>
+                <div class="contact-description">
+                    <textarea name="" id="contact-text-area" placeholder="Enter a breif description"></textarea>
+                </div>
+                <div class="contact-btn"><a class="btn " href="">Submit</a></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
