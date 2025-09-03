@@ -1,0 +1,330 @@
+/*Dark Background: A very dark, slightly cool-toned grey.
+
+Hex: #1A1D24
+
+Bright Glowing Cyan: The vibrant, bright color used for the main glow effect.
+
+Hex: #00F2E5
+
+Primary Cyan Text: The main color of the text "Portfolio" and the central part of the glowing line.
+
+Hex: #00B3A4
+
+Subtle Grey Text: The color used for the navigation links like "About", "Skills", etc.
+
+Hex: `#8D93A2
+
+
+
+<h1> (Page Title): 40px (2.5rem)
+
+<h2> (Section Title): 32px (2rem)
+
+<h3> (Sub-heading): 24px (1.5rem)
+
+<h4> (Deeper Sub-heading): 19px (1.2rem)
+
+<p> (Paragraph/Body Text): 16px (1rem)
+
+small (Caption/Label): 14px (0.875rem)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    /* ------------ colors ------------ */
+    --background: #1A1D24;
+    --bright-skyblue: #00F2E5;
+    --primary-text-color: #00B3A4;
+    --light-grey: #8D93A2;
+    /* ------------ Font-size ------------ */
+    --largest:7rem;
+    --largest-2nd:4rem;
+    --medium:3.5rem;
+    --paragraph-text: 2rem;
+    --small-text : 1.4rem;
+    
+}
+body {
+    background-color: var(--background);
+}
+/* ------------------------------- Components -------------------------------  */
+li {
+    list-style: none;
+}
+ul {
+    display: flex;
+    
+    
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary-text-color);
+    color: white;
+    border-radius: 10px;
+    width:fit-content;
+    font-size: var(--paragraph-text);
+    
+    &:hover {
+        box-shadow: 0px 0px 20px var(--bright-skyblue);
+    }
+}
+.main-container {
+    max-width: 80vw;
+    margin: 60px auto 0px;
+    
+}
+/* ------------------------------- Nav-Bar -------------------------------  */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-size: var(--paragraph-text);
+    font-family: cursive;
+    background-color: var(--background);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+   
+}
+.nav-links-container {
+    display: flex;
+    gap: 2.5rem;
+    
+}
+.nav-bar-links  {
+   
+    color: var(--light-grey);
+
+    &:hover {
+        color: white ;
+        text-decoration: var(--bright-skyblue) 3px underline;
+        /* transform: scale(1.05, 1.05); */
+        transition: 0.5s;
+        
+    }
+}
+.nav-bar-logo {
+    height: 50px;
+}
+/* ------------------------------- hero-section -------------------------------  */
+.hero-section {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    
+}
+.hero-section-image {
+    /* height: 77vh; */
+    height: 60rem;
+    border-radius: 180px;
+
+    &:hover {
+        transform: scale(1.1, 1.1)  rotateY(180deg);
+
+        transition: 1s;
+    }
+}
+.sub-container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hello-text {
+    font-size: var(--medium);
+
+}
+.my-name {
+    font-size: var(--largest)
+}
+.job-role {
+    font-size: var(--largest-2nd);
+}
+.description {
+    font-size: var(--paragraph-text);
+}
+.span-text {
+    color: var(--primary-text-color);
+}
+.social-icon-container {
+    margin:20px 0px 30px;
+    display: flex;
+    gap: 25px;
+
+   
+}
+.social-icon-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    
+   border-radius: 50%;
+   
+    
+}
+.social-icons {
+    height: 30px;
+    border-radius: 50%;
+    
+    &:hover {
+        transform: scale(1.1,1.1);
+        transition: all 0.5s;
+        box-shadow: 0px 0px 25px var(--bright-skyblue);
+    }
+}
+#git-hub-icon {
+    height: 35px;
+}
+/* ------------------------------- About -------------------------------  */
+.about-section-image {
+    height: 65vh;
+    border-radius: 180px;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+
+        transition: 1s;
+    }
+}
+.about-me-flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+    height: 100vh;
+}
+.about-me-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-me-description h2 {
+    font-size: var(--largest);
+}
+.about-me-description h3 {
+    font-size: var(--largest-2nd);
+    margin: -5px 0px 10px 0px;
+    
+}
+.about-me-description p {
+    font-size: var(--paragraph-text);
+    font-family: monospace;
+}
+/* ------------------------------- My Skills -------------------------------  */
+.my-skills-container {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--light-grey);
+
+    &:hover {
+        transform: scale(1.05,1.05);
+        box-shadow: 0px 0px 20px var(--bright-skyblue);
+        transition: all 0.5s ;
+    }
+    
+    
+    
+}
+.my-skills-header {
+    font-size: var(--largest);
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.skill-name {
+    font-size: var(--largest-2nd);
+    margin: 1rem 0px;
+}
+.skill-description {
+    font-size: var(--paragraph-text);
+    line-height: 1;
+    font-family:monospace;
+    margin: 1rem 0px 2rem;
+    
+}
+.skill-logo {
+    height: 15rem;
+    border-radius: 20%
+}
+.skill-button {
+    background-color: #00F2E5;
+    color: #1A1D24;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ------------------------------- contact me -------------------------------  */
+#contact-container {
+    width: 100%;
+    margin: 30px auto;
+  
+
+}
+.contact-me-header {
+    font-size: var(--largest);
+    text-align: center;
+}
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.contact-btn {
+    text-align: center;
+}
+
+.input input{
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: var(--light-grey);
+    color: #fff;
+
+    
+}
+.contact-description textarea {
+    width: 100%;
+    height: 350px;
+    padding: 10px 20px;
+    margin: 2rem 0px 2rem;
+    border-radius: 5px;
+    background-color: var(--light-grey);
+    color: #ffffff;
+    font-family: monospace;
+    font-size: var(--paragraph-text);
+}
+
+
+
+
