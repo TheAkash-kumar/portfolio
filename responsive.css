@@ -1,0 +1,101 @@
+body {
+    margin: 0px auto 0px auto;
+}
+@media (max-width:1300px) {
+    html{
+        font-size: 50%;
+    }
+    :root {
+        --largest:6rem;
+        --largest-2nd:3rem;
+        --medium:2.5rem;
+        --paragraph-text: 1.5rem;
+        --small-text : 1rem;
+    }
+}
+@media (max-width:970px) {
+    html{
+        font-size: 46%;
+    }
+}
+@media (max-width:889px) {
+    html{
+        font-size: 40%;
+    }
+}
+@media (max-width:850px) {
+    
+    .hero-section-image{
+        height: 50rem;
+    }
+    .my-name {
+        font-size: var(--largest);
+    }
+    .my-skills-container {
+        flex-direction: column;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .skill-logo{
+        height: 12rem;
+    }
+    
+    .contact-description textarea {
+        max-height: 250px;
+    }
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 40%;
+    }
+    .hero-section-image, .about-section-image {
+        height: 40rem;
+    }
+    .about-me-flexbox {
+        height: max-content;
+        margin-bottom:50px;
+    }
+    .my-skills-container {
+        max-width: 400px
+    }
+
+}
+@media (max-width:625px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        height: max-content;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* gap: 0px; */
+    }
+    .about-me-flexbox {
+        flex-direction: column;
+    }
+    .about-me-flexbox  {
+        height: max-content;
+        margin-bottom:50px;
+        margin-top: 50px;
+    }
+    .about-section-image {
+        height: 40rem;
+        width: fit-content;
+    }
+    .about-image-container {
+        align-self: center;
+    }
+    .input {
+        grid-template-columns: 1fr;
+    }
+    #contact-text-area {
+        width: 100%;
+    }
+}
+
+@media (max-width:425px) {
+    .nav-bar-links {
+        display: none;
+    }
+}
