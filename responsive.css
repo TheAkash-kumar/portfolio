@@ -72,6 +72,9 @@ body {
         margin-bottom: 50px;
         /* gap: 0px; */
     }
+    .btn {
+        padding: 10px;
+    }   
     .about-me-flexbox {
         flex-direction: column;
     }
@@ -101,3 +104,4 @@ body {
     }
 
 }
+
