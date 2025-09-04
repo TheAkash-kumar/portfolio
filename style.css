@@ -313,8 +313,8 @@ a {
     padding: 10px 20px;
     margin-bottom: 1rem;
     border-radius: 5px;
-    background-color: var(--light-grey);
-    color: #fff;
+    background-color: rgb(200, 209, 209);
+    color: #0c0c0c;
 
     
 }
@@ -324,11 +324,12 @@ a {
     padding: 10px 20px;
     margin: 2rem 0px 2rem;
     border-radius: 5px;
-    background-color: var(--light-grey);
-    color: #ffffff;
+    background-color: rgb(200, 209, 209);
+    color: #0c0c0c;
     font-family: monospace;
     font-size: var(--paragraph-text);
 }
+
 
 
 
