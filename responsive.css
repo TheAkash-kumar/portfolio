@@ -102,6 +102,11 @@ body {
     .nav-bar-links {
         display: none;
     }
+    .submit-btn{
+        width: 100%;
+        font-size: var(--largest-2nd);
+    }
 
 }
+
 
