@@ -109,16 +109,23 @@ a {
     
 }
 .nav-bar-links  {
-   
     color: var(--light-grey);
-
-    &:hover {
-        color: white ;
-        text-decoration: var(--bright-skyblue) 3px underline;
-        /* transform: scale(1.05, 1.05); */
-        transition: 0.5s;
-        
-    }
+    position: relative;
+}
+.nav-bar-links::after{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color:var(--bright-skyblue);
+    border-radius: 2px; 
+}
+.nav-bar-links:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+   
 }
 .nav-bar-logo {
     height: 50px;
@@ -329,6 +336,7 @@ a {
     font-family: monospace;
     font-size: var(--paragraph-text);
 }
+
 
 
 
