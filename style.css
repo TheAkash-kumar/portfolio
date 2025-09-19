@@ -238,7 +238,7 @@ a {
 }
 .about-me-description p {
     font-size: var(--paragraph-text);
-    font-family: monospace;
+   /* font-family: monospace; */
 }
 /* ------------------------------- My Skills -------------------------------  */
 .my-skills-container {
@@ -257,7 +257,8 @@ a {
     align-items: center;
     padding: 20px;
     border-radius: 30px;
-    background-color: var(--light-grey);
+    border: 2px solid #00F2E5;
+/*     background-color: var(--light-grey); */
     max-width: 490px;
 
     &:hover {
@@ -281,7 +282,7 @@ a {
 .skill-description {
     font-size: var(--paragraph-text);
     line-height: 1;
-    font-family:monospace;
+/*     font-family:monospace; */
     margin: 1rem 0px 2rem;
     
 }
@@ -290,6 +291,7 @@ a {
     border-radius: 20%
 }
 .skill-button {
+    display: none;
     background-color: #00F2E5;
     color: #1A1D24;
     font-family: 'Courier New', Courier, monospace;
@@ -320,8 +322,8 @@ a {
     padding: 10px 20px;
     margin-bottom: 1rem;
     border-radius: 5px;
-    background-color: rgb(200, 209, 209);
-    color: #0c0c0c;
+    background-color: #374151;
+    color: #fff;
 
     
 }
@@ -334,11 +336,12 @@ a {
     height: 350px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: rgb(200, 209, 209);
-    color: #0c0c0c;
-    font-family: monospace;
-    font-size: var(--paragraph-text);
+    background-color: #374151;
+    color: #fff;
+    font-family: inherit;
+/*     font-size: var(--paragraph-text); */
 }
+
 
 
 
