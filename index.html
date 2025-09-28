@@ -94,15 +94,16 @@
         <!------------------------------------------ contact me --------------------------------------- -->
         <div id="contact-container">
             <h2 class="contact-me-header">contact <span class="span-text">Me!</span></h2>
-            <form class="contact-form" action="">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST"class="contact-form">
+                <input type="hidden" name="access_key" value="390917b3-9bb3-43b6-b79b-675b6c7f2616">
                 <div class="input">
-                    <input type="text" placeholder="Enter First name">
-                    <input type="text" placeholder="Enter Last name">
-                    <input type="email" placeholder="Enter Email Address">
-                    <input type="tel" placeholder="Enter contact Number">
+                    <input name="first-name" type="text" placeholder="Enter First name">
+                    <input name="last-name" type="text" placeholder="Enter Last name">
+                    <input name="email" type="email" placeholder="Enter Email Address">
+                    <input name="telephone" type="tel" placeholder="Enter contact Number">
                 </div>
                 <div class="contact-description">
-                    <textarea name="" id="contact-text-area" placeholder="Enter a breif description"></textarea>
+                    <textarea name="message" id="contact-text-area" placeholder="Enter a breif description"></textarea>
                 </div>
                 <div class="contact-btn"><a class="btn submit-btn" href="">Submit</a></div>
             </form>
@@ -115,4 +116,5 @@
 </body>
 
 </html>
+
 
